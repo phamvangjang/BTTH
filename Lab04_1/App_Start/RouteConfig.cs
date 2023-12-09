@@ -15,7 +15,7 @@ namespace Lab04_1
                 defaults: new { controller = "Customer", action = "CustomerDetails", id = UrlParameter.Optional }
             );
             
-            /*
+            
             // Mặc định, bạn có thể định tuyến tới hành động Index của CustomerController
             routes.MapRoute(
                 name: "CustomerController",
@@ -27,7 +27,7 @@ namespace Lab04_1
             routes.MapRoute(
                 name: "CustomerDetails",
                 url: "Customer/CustomerDetails",
-                defaults: new { controller = "CustomerController", action = "CustomerDetails" }
+                defaults: new { controller = "Customer", action = "CustomerDetails" }
             );
 
             // Định tuyến tới hành động CustomerList của CustomerController
@@ -36,7 +36,6 @@ namespace Lab04_1
                 url: "Product/CustomerList",
                 defaults: new { controller = "Customer", action = "CustomerList" }
             );
-            */
         }
     }
 }
