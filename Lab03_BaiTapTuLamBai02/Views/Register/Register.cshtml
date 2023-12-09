@@ -4,5 +4,54 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Register</h2>
-
+<h2>Information Register</h2>
+<table class="table table-bordered">
+    <tr>
+        <td>Ten Don Vi: </td>
+        <td>@TempData["UNameUnit"]</td>
+    </tr>
+    <tr>
+        <td>Loai hinh Don vi: </td>
+        <td>@TempData["TypeUnit"]</td>
+    </tr>
+    <tr>
+        <td>So Luong nhan vien: </td>
+        <td>@TempData["Quantity"]</td>
+    </tr>
+    <tr>
+        <td>Dia chi: </td>
+        <td>@TempData["Addresses"]</td>
+    </tr>
+    <tr>
+        <td>Nguoi lien he: </td>
+        <td>@TempData["Contact"]</td>
+    </tr>
+    <tr>
+        <td>So dien thoai: </td>
+        <td>@TempData["Phone"]</td>
+    </tr>
+    <tr>
+        <td>So Fax: </td>
+        <td>@TempData["Fax"]</td>
+    </tr>
+    <tr>
+        <td>Email: </td>
+        <td>@TempData["Email"]</td>
+    </tr>
+    <tr>
+        <td>Dia chi Website: </td>
+        <td>@TempData["AddressesWS"]</td>
+    </tr>
+    <tr>
+        <td>Ten Dang Nhap: </td>
+        <td>@TempData["FName"]</td>
+    </tr>
+    <tr>
+        <td>Mat khau: </td>
+        <td>@TempData["Pass"]</td>
+    </tr>
+    <tr>
+        <td>Nhan thu dien tu: </td>
+        <td>@TempData["Receive"]</td>
+    </tr>
+</table>

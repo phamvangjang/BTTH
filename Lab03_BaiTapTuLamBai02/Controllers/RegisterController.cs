@@ -1,8 +1,5 @@
 ﻿using Lab03_BaiTapTuLamBai02.Models;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace Lab03_BaiTapTuLamBai02.Controllers
@@ -13,7 +10,7 @@ namespace Lab03_BaiTapTuLamBai02.Controllers
         public ActionResult FormRegister()
         {
             // tạo list cho droplist
-            ViewBag.listCountry = new List<LoaiHinh>() {
+            ViewBag.listUnit = new List<LoaiHinh>() {
             new LoaiHinh(){ID="0",TenLoaiHinh="-- Chọn Đơn Vị --"},
             new LoaiHinh(){ID="VN",TenLoaiHinh="Việt Nam"},
             new LoaiHinh(){ID="AT",TenLoaiHinh="AUSTRALIA"},
@@ -40,7 +37,7 @@ namespace Lab03_BaiTapTuLamBai02.Controllers
             TempData["AddressesWS"] = Request["txtAddressesWS"];
             TempData["FName"] = Request["txtFName"];
             TempData["Pass"] = Request["txtPass"];
-            TempData["Receive"] = Request["Receive"].ToString();
+            TempData["Receive"] = Request["txtReceive"];
             return View();
         }
     }
